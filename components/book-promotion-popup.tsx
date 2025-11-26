@@ -29,7 +29,11 @@ export function BookPromotionPopup() {
       setTimeout(() => {
         setIsLoaded(true)
         // Trigger confetti after popup loads
-        setTimeout(() => setShowConfetti(true), 400)
+        setTimeout(() => {
+          setShowConfetti(true)
+          // Stop confetti after 5 seconds
+          setTimeout(() => setShowConfetti(false), 5000)
+        }, 600)
       }, 100)
     }, 10000)
 
@@ -80,7 +84,8 @@ export function BookPromotionPopup() {
   if (!isVisible) return null
 
   return (
-    <AnimatePresence>
+    <>
+      {/* Confetti outside AnimatePresence to prevent flicker */}
       {showConfetti && (
         <div className="fixed inset-0 z-[9999] pointer-events-none">
           <Confetti
@@ -93,6 +98,7 @@ export function BookPromotionPopup() {
         </div>
       )}
 
+    <AnimatePresence>
       {isVisible && (
         <motion.div
           initial={{ opacity: 0 }}
@@ -319,5 +325,6 @@ export function BookPromotionPopup() {
         </motion.div>
       )}
     </AnimatePresence>
+    </>
   )
 }
