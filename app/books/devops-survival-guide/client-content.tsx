@@ -260,15 +260,16 @@ export function ClientContent() {
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 animate-pulse" />
               <Button
                 asChild
-                size="lg"
-                className="relative text-lg px-10 py-7 shadow-2xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all hover:scale-105"
-              >
-                <Link href="#subscribe">
-                  <Mail className="mr-2 h-5 w-5" />
-                  Get Early Access
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
+              size="lg"
+              className="relative text-lg px-10 py-7 shadow-2xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all hover:scale-105"
+              asChild
+            >
+              <Link href="#subscribe">
+                <Mail className="mr-2 h-5 w-5" />
+                Get Early Access
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </Button>
             </div>
 
             <p className="text-sm text-muted-foreground mt-4">
@@ -500,10 +501,10 @@ export function ClientContent() {
                     size="lg"
                     className="w-full text-lg py-7 shadow-xl shadow-blue-500/30 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 transition-all hover:scale-105 group relative overflow-hidden"
                   >
-                    <Link href="/">
+                    <Link href="#subscribe">
                       <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform" />
                       <Mail className="mr-2 h-5 w-5 relative z-10" />
-                      <span className="relative z-10">Subscribe to Newsletter</span>
+                      <span className="relative z-10">Get Early Access to New Chapters</span>
                       <Sparkles className="ml-2 h-5 w-5 relative z-10" />
                     </Link>
                   </Button>
