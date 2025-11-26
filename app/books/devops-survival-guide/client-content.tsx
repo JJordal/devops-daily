@@ -233,14 +233,14 @@ export function ClientContent() {
               <span className="text-foreground font-semibold">without burning out</span>.
             </p>
 
-            {/* Stats with counter effect */}
-            <div className="flex flex-wrap justify-center gap-8 mb-12">
-              {[
-                { icon: BookOpen, label: '14 Chapters', count: '14' },
-                { icon: Coffee, label: 'Practical Examples', count: '50+' },
-                { icon: Users, label: 'Subscribers', count: '1K+' },
-                { icon: Award, label: 'Free Forever', count: '100%' },
-              ].map((stat, idx) => (
+           {/* Stats with counter effect */}
+           <div className="flex flex-wrap justify-center gap-8 mb-12">
+             {[
+               { icon: BookOpen, label: '14 Chapters', count: '14' },
+               { icon: Coffee, label: 'Practical Examples', count: '50+' },
+               { icon: Users, label: 'Subscribers', count: '1K+' },
+               { icon: Award, label: 'Launch Pricing', count: 'Soon' },
+             ].map((stat, idx) => (
                 <div
                   key={idx}
                   className="flex items-center gap-3 group cursor-default"
