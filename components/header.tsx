@@ -33,6 +33,8 @@ import {
   Heart,
   Newspaper,
   Library,
+  Calendar,
+  Gift,
 } from 'lucide-react';
 
 interface NavItem {
@@ -155,6 +157,14 @@ const dropdownNavigation: Record<string, NavSection[]> = {
           href: '/quizzes',
           description: 'Test your DevOps knowledge',
           icon: Trophy,
+        },
+        {
+          label: 'Advent of DevOps',
+          href: '/advent-of-devops',
+          description: '25 days of DevOps challenges',
+          icon: Gift,
+          featured: true,
+          badge: '2025',
         },
       ],
     },
