@@ -99,9 +99,9 @@ export function GiscusComments({ className, title }: GiscusCommentsProps) {
         <Giscus
           id="comments"
           repo="The-DevOps-Daily/devops-daily"
-          repoId="R_kgDOMUcYgg"
+          repoId="MDEwOlJlcG9zaXRvcnkzNTUzMDQ5MTk="
           category="General"
-          categoryId="DIC_kwDOMUcYgs4ClPgN"
+          categoryId="DIC_kwDOFS2F184CjIVy"
           mapping="specific"
           term={discussionTerm}
           strict="0"
