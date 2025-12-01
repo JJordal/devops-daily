@@ -94,7 +94,21 @@ export function GiscusComments({ className, title }: GiscusCommentsProps) {
       >
         <div className="flex items-center gap-2 mb-4 pb-2 border-b">
           <MessageSquare className="h-5 w-5 text-primary" />
-          <h2 className="text-xl font-semibold">Discussions</h2>
+          <div className="flex-1">
+            <h2 className="text-xl font-semibold">Discussions</h2>
+            <p className="text-sm text-muted-foreground mt-1">
+              Powered by{' '}
+              <a
+                href="https://giscus.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:underline font-medium"
+              >
+                Giscus
+              </a>
+              {' '}& GitHub Discussions
+            </p>
+          </div>
         </div>
         <Giscus
           id="comments"
